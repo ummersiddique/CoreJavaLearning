@@ -12,6 +12,14 @@ public class Main {
         } else {
             System.out.println("Element found at : " + index);
         }
+
+        var first = "Demo";
+        var second = "Demo";
+        System.out.println("Both strings are equal : " + areEqual(first, second));
+    }
+
+    private static boolean areEqual(String first, String second) {
+        return first.equals(second);
     }
 
     private static int findElement(int[] array, int element) {
