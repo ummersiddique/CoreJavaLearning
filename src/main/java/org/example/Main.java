@@ -16,6 +16,12 @@ public class Main {
         var first = "Demo";
         var second = "Demo";
         System.out.println("Both strings are equal : " + areEqual(first, second));
+
+        System.out.println("String contains : " + contains("This is the input", "the"));
+    }
+
+    private static boolean contains(String input, String stringToFind) {
+        return input.contains(stringToFind);
     }
 
     private static boolean areEqual(String first, String second) {
