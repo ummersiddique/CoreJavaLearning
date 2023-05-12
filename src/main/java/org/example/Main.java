@@ -4,6 +4,25 @@ public class Main {
     public static void main(String[] args) {
         calculateSum(12, 23);
         calculateSum(123, 23, 23, 23, 23, 23, 23, 23, 123);
+
+        var array = new int[]{12, 32, 23, 23, 43, 5};
+        int index = findElement(array, 5);
+        if (index == -1) {
+            System.out.println("Element not found");
+        } else {
+            System.out.println("Element found at : " + index);
+        }
+    }
+
+    private static int findElement(int[] array, int element) {
+        if (array != null) {
+            for (int index = 0; index < array.length; index++) {
+                var number = array[index];
+                if (number == element)
+                    return index;
+            }
+        }
+        return -1;
     }
 
     // method signature ` calculateSum(int,int) `
